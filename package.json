@@ -1,0 +1,26 @@
+{
+  "name": "dhcompile",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=./webpack.2.js"
+  },
+  "author": "Carl",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.1",
+    "breakpoint-sass": "^2.7.1",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "glob": "^7.1.2",
+    "import-glob-loader": "^1.1.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^3.12.0"
+  }
+}
