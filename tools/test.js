@@ -46,7 +46,7 @@
 let Factory = require('./components/Factory');
 let compile = new Factory();
 
-compile.js('./theme/custom/js/src/app.js', './theme/custom/js/dist/app.js');
+// compile.js('./theme/custom/js/src/app.js', './theme/custom/js/dist/app.js');
 
 console.log(compile.buildConfig());
 

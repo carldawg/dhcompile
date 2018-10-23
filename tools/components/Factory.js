@@ -1,8 +1,8 @@
 let defaultConfig = require('../webpack-default');
 
-
 let components = [
     'JavaScript',
+    'Scss'
 ];
 
 class Factory {
@@ -32,12 +32,14 @@ class Factory {
     this.components.push(component);
     this[name] = (...args) => {
       component.register(...args);
+      return this;
     }
   }
 
   buildConfig() {
     this.applyEntries();
     this.applyRules();
+    this.applyPlugins();
     this.mergeConfig();
   }
 
@@ -66,6 +68,13 @@ class Factory {
     }
   }
 
+  applyPlugins() {
+    this.components.forEach(component => {
+      component.getPlugins().forEach(plugin => {
+        this.config.plugins.push(plugin);
+      })
+    });
+  }
 
 }
 

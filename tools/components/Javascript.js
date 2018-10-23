@@ -2,6 +2,7 @@ class Javascript {
 
   constructor() {
     this.entries = [];
+    this.plugins = [];
   }
 
   name() {
@@ -9,16 +10,9 @@ class Javascript {
   }
 
   register($input, $output) {
-
-
     this.entries.push({
       [path.resolve($output)]: [path.resolve($input)],
     });
-
-
-    // this.entries.push({
-    //   [$output]: [$input],
-    // });
   }
 
 
@@ -53,8 +47,8 @@ class Javascript {
     }];
   }
 
-  webpackPlugins() {
-
+  getPlugins() {
+    return this.plugins;
   }
 }
 

@@ -1,14 +1,13 @@
 {
   "name": "dhcompile",
+  "private": true,
   "version": "1.0.0",
   "description": "[![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=./webpack.2.js"
   },
-  "author": "Carl",
-  "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.5.1",
